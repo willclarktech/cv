@@ -1,8 +1,8 @@
 export default {
-// $a4-height: 297mm;
-// $a4-width: 210mm;
-// $a4-padding-v: 16mm;
-// $a4-padding-h: 16mm;
+  // a4Height: '297mm',
+  // a4Width: '210mm',
+  // a4PaddingVertical: '16mm',
+  // a4PaddingHorizontal: '16mm',
 
   leftColumnWidth: 30/100,
 
@@ -10,15 +10,15 @@ export default {
   baseFontSize: '4.2mm',
   headingLetterSpacing: 1.05,
   h1FontSize: '2.3em',
-// $h2-font-size: 1.2em;
+  // h2FontSize: '1.2em',
   smallFontSize: '0.8em',
 
   mainTextColor: '#131b30',
-// $light-text-color: #888;
+  // lightTextColor: '#888',
   highlightColor: '#00b0e6',
 
   defaultFontWeight: 300,
-// $history-detail-font-size: 0.8em;
+  // historyDetailFontSize: '0.8em',
 
   iconWidth: '5.5mm',
   iconPad: '1mm',
