@@ -6,7 +6,7 @@ const contactDetailIcons = {
   email: 'envelope',
   phone: 'mobile',
   address: 'map-pin',
-  website: 'globe',
+  website: 'chrome',
   twitter: 'twitter',
   linkedIn: 'linkedin',
   gitHub: 'github',
