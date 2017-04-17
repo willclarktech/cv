@@ -8,8 +8,8 @@ export default {
 
   mainFont: 'Lato, sans-serif',
   baseFontSize: '4.2mm',
-// $h-letter-spacing: 1.05;
-// $h1-font-size: 2.3em;
+  headingLetterSpacing: 1.05,
+  h1FontSize: '2.3em',
 // $h2-font-size: 1.2em;
   smallFontSize: '0.8em',
 
@@ -17,7 +17,7 @@ export default {
 // $light-text-color: #888;
   highlightColor: '#00b0e6',
 
-// $default-font-weight: 300;
+  defaultFontWeight: 300,
 // $history-detail-font-size: 0.8em;
 
   iconWidth: '5.5mm',
