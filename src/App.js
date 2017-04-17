@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import style from './styles/App.style'
 import Intro from './components/Intro'
 import Contact from './components/Contact'
 import Section from './components/Section'
@@ -52,7 +52,7 @@ class App extends Component {
     }
 
     return (
-      <div className="App">
+      <div className="App" style={ style }>
         <header>
           <Contact { ...contactProps } />
           <Intro {...introProps } />
