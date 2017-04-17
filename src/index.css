@@ -18,3 +18,8 @@ body.a4-page {
   height: 297mm;
   width: 210mm;
 }
+
+p,
+td {
+  text-align: justify;
+}
