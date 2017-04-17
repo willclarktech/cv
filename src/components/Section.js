@@ -6,9 +6,9 @@ const monthNames = [
 ]
 
 const formatDate = date =>
-  date === 'present'
-    ? date
-    : `${ monthNames[date.getMonth()] } ${ date.getFullYear() }`
+  date instanceof Date
+    ? `${ monthNames[date.getMonth()] } ${ date.getFullYear() }`
+    : date
 
 const TimelineItem = ({
   title,
@@ -18,9 +18,9 @@ const TimelineItem = ({
 }) => (
   <tr>
     <th>
-      <div class="timeline-item-title">{ title }</div>
-      <div class="timeline-item-organisation">{ organization }</div>
-      <div class="timeline-item-dates">
+      <div className="timeline-item-title">{ title }</div>
+      <div className="timeline-item-organisation">{ organization }</div>
+      <div className="timeline-item-dates">
         { console.log(dates) || dates.map(formatDate).join(' — ') }
       </div>
     </th>
@@ -34,14 +34,12 @@ export default ({
   title,
   timeline,
 }) => {
-  const id = title
-    .split(' ')
-    .join('-')
+  const id = title.split(' ').join('-')
 
   return (
     <section id={ id }>
       <h2>{ title }</h2>
-      <table class="timeline">
+      <table className="timeline">
         { timeline.map(TimelineItem) }
       </table>
     </section>
