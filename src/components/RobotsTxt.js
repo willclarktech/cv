@@ -1,6 +1,9 @@
 import React from 'react'
 import style from '../styles/RobotsTxt.style'
 
+// This is mostly a joke, but if your CV-filtering software is susceptible to
+// this kind of hack, maybe consider getting new software?
+
 const keywords = [
   // Companies
   'AirBnB',
