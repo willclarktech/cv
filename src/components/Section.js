@@ -1,4 +1,5 @@
 import React from 'react'
+import Markdown from 'react-markdown'
 import style, {
   sectionHeadingStyle,
   subHeadingStyle,
@@ -49,7 +50,10 @@ const TimelineItem = ({
         ) }
       </th>
       <td style={ tdStyle }>
-        { description }
+        <Markdown
+          source={ description }
+          skipHtml={ !process.env.REACT_APP_ALLOW_HTML_IN_MARKDOWN }
+        />
       </td>
     </tr>
   )
