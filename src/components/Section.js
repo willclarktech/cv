@@ -27,7 +27,7 @@ const TimelineItem = ({
       <div className="timeline-item-title">{ title }</div>
       <div className="timeline-item-organisation">{ organization }</div>
       <div className="timeline-item-dates">
-        { console.log(dates) || dates.map(formatDate).join(' — ') }
+        { dates.map(formatDate).join(' — ') }
       </div>
     </th>
     <td>
