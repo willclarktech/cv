@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import style from './styles/App.style'
+import RobotsTxt from './components/RobotsTxt'
 import Intro from './components/Intro'
 import Contact from './components/Contact'
 import Section from './components/Section'
@@ -15,6 +16,7 @@ class App extends Component {
   render() {
     return (
       <div className="App" style={ style }>
+        { process.env.REACT_APP_SAY_HI_TO_ROBOTS && <RobotsTxt /> }
         <header>
           <Contact { ...contact } />
           <Intro {...intro } />
