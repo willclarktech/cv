@@ -10,7 +10,7 @@ import Icon from './Icon'
 const contactDetailIcons = {
   email: 'envelope',
   phone: 'mobile',
-  address: 'map-pin',
+  // address: 'map-pin',
   website: 'chrome',
   twitter: 'twitter',
   linkedIn: 'linkedin',
@@ -76,7 +76,7 @@ export default props => {
         key={ key }
         name={ key }
         text={ props[key] }
-        startOfNewGroup={ i === 3 }
+        startOfNewGroup={ key === 'website' }
       />
     ))
   return (
