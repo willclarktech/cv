@@ -1,9 +1,4 @@
 export default {
-  // a4Height: '297mm',
-  // a4Width: '210mm',
-  // a4PaddingVertical: '16mm',
-  // a4PaddingHorizontal: '16mm',
-
   leftColumnWidthPercentage: 30/100,
   headingLetterSpacing: 1.05,
 
