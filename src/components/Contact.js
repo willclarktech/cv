@@ -1,6 +1,6 @@
 import React from 'react';
 import style, { contactDetailStyle, contactDetailNewGroupStyle } from '../styles/Contact.style'
-import iconStyle from '../styles/Icon.style'
+import Icon from './Icon'
 
 const contactDetailIcons = {
   email: 'envelope',
@@ -25,7 +25,7 @@ const ContactDetailItem = ({
       className="contact-detail"
       style={ s }
     >
-      <i className={ `fa fa-${ icon }` } style={ iconStyle } />
+      <Icon name={ icon } />
       { text }
     </li>
   )
