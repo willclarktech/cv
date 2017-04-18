@@ -7,6 +7,8 @@ const {
 } = variables
 
 export default {
+  position: 'relative',
+  height: '100%',
   fontFamily: mainFont,
   fontSize: baseFontSize,
   color: mainTextColor,

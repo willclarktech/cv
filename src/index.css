@@ -7,9 +7,7 @@ html {
 
 body {
   background-color: #fff;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 0;
   font-family: sans-serif;
 }
@@ -17,6 +15,10 @@ body {
 .a4-page {
   height: 297mm;
   width: 210mm;
+}
+
+#root {
+  height: 100%;
 }
 
 p,
