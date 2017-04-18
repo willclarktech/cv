@@ -27,7 +27,6 @@ class App extends Component {
               <Section
                 key={ section.title }
                 { ...section }
-                isFirstSection={ !i }
               />
             ))
           }

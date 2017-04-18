@@ -63,7 +63,6 @@ export default ({
   title,
   subtitle,
   timeline,
-  isFirstSection,
 }) => {
   const id = title.split(' ').join('-')
 
