@@ -1,22 +1,23 @@
 import variables from './_variables.style'
 
 const {
-  leftColumnWidth,
+  leftColumnWidthPercentage,
   headingLetterSpacing,
   highlightColor,
   h1FontSize,
+  h2FontSize,
   defaultFontWeight,
 } = variables
 
 export const aside = {
   display: 'inline-block',
   float: 'left',
-  width: `${ leftColumnWidth * 100 }%`,
+  width: `${ leftColumnWidthPercentage * 100 }%`,
 }
 
 export const mainContent = {
   display: 'inline-block',
-  width: `${ 100 - (leftColumnWidth * 100) }%`,
+  width: `${ 100 - (leftColumnWidthPercentage * 100) }%`,
 }
 
 export const mainHeading = {
@@ -29,4 +30,10 @@ export const h1 = {
   ...mainHeading,
   fontSize: h1FontSize,
   fontWeight: defaultFontWeight * 2,
+}
+
+export const h2 = {
+  ...mainHeading,
+  fontSize: h2FontSize,
+  display: 'flex',
 }

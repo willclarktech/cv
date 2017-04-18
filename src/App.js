@@ -37,15 +37,16 @@ class App extends Component {
       gitHub,
     }
 
-    const experienceSectionProps = {
-      title: 'Experience',
-      timeline: [],
-    }
-
-    const educationSectionProps = {
-      title: 'Education',
-      timeline: [],
-    }
+    const sectionProps = [
+      {
+        title: 'Experience',
+        timeline: [],
+      },
+      {
+        title: 'Education',
+        timeline: [],
+      },
+    ]
 
     const footerProps = {
       link: footerLink,
@@ -58,8 +59,15 @@ class App extends Component {
           <Intro {...introProps } />
         </header>
         <main>
-          <Section { ...experienceSectionProps } />
-          <Section { ...educationSectionProps } />
+          { sectionProps
+            .map((section, i) => (
+              <Section
+                key={ section.title }
+                { ...section }
+                isFirstSection={ !i }
+              />
+            ))
+          }
         </main>
         <Footer { ...footerProps } />
       </div>

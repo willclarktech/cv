@@ -4,13 +4,13 @@ export default {
   // a4PaddingVertical: '16mm',
   // a4PaddingHorizontal: '16mm',
 
-  leftColumnWidth: 30/100,
+  leftColumnWidthPercentage: 30/100,
 
   mainFont: 'Lato, sans-serif',
   baseFontSize: '4.2mm',
   headingLetterSpacing: 1.05,
   h1FontSize: '2.3em',
-  // h2FontSize: '1.2em',
+  h2FontSize: '1.2em',
   smallFontSize: '0.8em',
 
   mainTextColor: '#131b30',

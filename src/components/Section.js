@@ -1,4 +1,10 @@
-import React from 'react';
+import React from 'react'
+import style, {
+  notFirstSectionStyle,
+  sectionHeadingStyle,
+  ruleLeftStyle,
+  ruleRightStyle,
+} from '../styles/Section.style'
 
 const monthNames = [
   'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
@@ -33,12 +39,20 @@ const TimelineItem = ({
 export default ({
   title,
   timeline,
+  isFirstSection,
 }) => {
   const id = title.split(' ').join('-')
+  const s = isFirstSection
+    ? style
+    : { ...style, ...notFirstSectionStyle }
 
   return (
-    <section id={ id }>
-      <h2>{ title }</h2>
+    <section id={ id } style={ s }>
+      <span style={ ruleLeftStyle } />
+      <h2 style={ sectionHeadingStyle }>
+        { title }
+        <span style={ ruleRightStyle } />
+      </h2>
       <table className="timeline">
         { timeline.map(TimelineItem) }
       </table>
