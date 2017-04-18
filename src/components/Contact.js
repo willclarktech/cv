@@ -12,21 +12,52 @@ const contactDetailIcons = {
   gitHub: 'github',
 }
 
-const ContactDetailItem = ({
+const contactDetailHrefPrefixes = {
+  email: 'mailto:',
+  phone: 'tel:',
+  address: 'https://www.google.com/maps/place/',
+  website: 'https://',
+  twitter: 'https://twitter.com/',
+  linkedIn: 'https://linkedin.com/in/',
+  gitHub: 'https://github.com/',
+}
+
+const getHref = (name, text) => {
+  const prefix = contactDetailHrefPrefixes[name]
+  const suffix = name === 'address'
+    ? text.replace(/ /g, '+')
+    : text
+  return `${ prefix }${ suffix }`
+}
+
+const ContactLink = ({
+  name,
   text,
-  icon,
+}) => {
+  const href = getHref(name, text)
+  return (
+    <a href={ href }>
+      { text }
+    </a>
+  )
+}
+
+const ContactDetailItem = ({
+  name,
+  text,
   startOfNewGroup,
 }, i, j, k) => {
   const s = startOfNewGroup
     ? { ...contactDetailStyle, ...contactDetailNewGroupStyle }
     : contactDetailStyle
+
   return (
     <li
       className="contact-detail"
       style={ s }
     >
-      <Icon name={ icon } />
-      { text }
+      <Icon name={ contactDetailIcons[name] } />
+      <ContactLink name={ name } text={ text } />
     </li>
   )
 }
@@ -37,8 +68,8 @@ export default props => {
     .map((key, i) => (
       <ContactDetailItem
         key={ key }
+        name={ key }
         text={ props[key] }
-        icon={ contactDetailIcons[key] }
         startOfNewGroup={ i === 3 }
       />
     ))
