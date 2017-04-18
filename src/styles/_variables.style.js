@@ -5,10 +5,12 @@ export default {
   // a4PaddingHorizontal: '16mm',
 
   leftColumnWidthPercentage: 30/100,
+  headingLetterSpacing: 1.05,
 
   mainFont: 'Lato, sans-serif',
+  defaultFontWeight: 300,
+
   baseFontSize: '4.2mm',
-  headingLetterSpacing: 1.05,
   h1FontSize: '2.3em',
   h2FontSize: '1.2em',
   smallFontSize: '0.8em',
@@ -16,6 +18,4 @@ export default {
   mainTextColor: '#131b30',
   lightTextColor: '#888',
   highlightColor: '#00b0e6',
-
-  defaultFontWeight: 300,
 }

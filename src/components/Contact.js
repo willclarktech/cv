@@ -1,5 +1,12 @@
 import React from 'react';
-import style, { contactListStyle, contactDetailStyle, contactDetailNewGroupStyle } from '../styles/Contact.style'
+import style, {
+  contactListStyle,
+  contactDetailStyle,
+  contactDetailNewGroupStyle,
+} from '../styles/Contact.style'
+import {
+  linkStyle,
+} from '../styles/App.style'
 import Icon from './Icon'
 
 const contactDetailIcons = {
@@ -36,7 +43,7 @@ const ContactLink = ({
 }) => {
   const href = getHref(name, text)
   return (
-    <a href={ href }>
+    <a href={ href } style={ linkStyle }>
       { text }
     </a>
   )
