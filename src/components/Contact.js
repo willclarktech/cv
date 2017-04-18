@@ -1,5 +1,5 @@
 import React from 'react';
-import style, { contactDetailStyle, contactDetailNewGroupStyle } from '../styles/Contact.style'
+import style, { contactListStyle, contactDetailStyle, contactDetailNewGroupStyle } from '../styles/Contact.style'
 import Icon from './Icon'
 
 const contactDetailIcons = {
@@ -44,7 +44,7 @@ export default props => {
     ))
   return (
     <aside id="contact" style={ style }>
-      <ul>
+      <ul style={ contactListStyle }>
         { listItems }
       </ul>
     </aside>
