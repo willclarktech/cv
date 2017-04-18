@@ -5,15 +5,15 @@ import Intro from './components/Intro'
 import Contact from './components/Contact'
 import Section from './components/Section'
 import Footer from './components/Footer'
-import {
-  intro,
-  contact,
-  sections,
-  footer,
-} from '../config'
 
 class App extends Component {
   render() {
+    const {
+      intro,
+      contact,
+      sections,
+      footer,
+    } = this.props.content
     return (
       <div className="App" style={ style }>
         { process.env.REACT_APP_SAY_HI_TO_ROBOTS && <RobotsTxt /> }
