@@ -4,9 +4,7 @@ import style, {
   contactDetailStyle,
   contactDetailNewGroupStyle,
 } from '../styles/Contact.style'
-import {
-  linkStyle,
-} from '../styles/App.style'
+import Link from './Link'
 import Icon from './Icon'
 
 const contactDetailIcons = {
@@ -43,9 +41,10 @@ const ContactLink = ({
 }) => {
   const href = getHref(name, text)
   return (
-    <a href={ href } style={ linkStyle }>
-      { text }
-    </a>
+    <Link
+      href={ href }
+      text={ text }
+    />
   )
 }
 
