@@ -73,10 +73,10 @@ export default ({
       </h2>
       <table style={ timelineStyle }>
         <tbody>
-          { timeline.map(item => (
+          { timeline.map((item, i) => (
             <TimelineItem
               key={ `${ item.title }@${ item.organization }` }
-              quick={ title === 'Skills' }
+              quick={ title === 'Skills' && i !== timeline.length - 1 }
               { ...item }
             />
           )) }

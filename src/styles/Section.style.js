@@ -47,7 +47,7 @@ export const timelineStyle = {
 }
 
 export const timelineCellStyle = {
-  paddingBottom: '8mm',
+  paddingBottom: '5mm',
 }
 
 export const timelineHeaderCellStyle = {
@@ -77,4 +77,6 @@ export const timelineItemOrganisationStyle = {
   color: lightTextColor,
 }
 
-export default {}
+export default {
+  marginTop: '-1mm', // HACK
+}
