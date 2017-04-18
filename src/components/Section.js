@@ -61,7 +61,12 @@ export default ({
       </h2>
       <table style={ timelineStyle }>
         <tbody>
-          { timeline.map(TimelineItem) }
+          { timeline.map(item => (
+            <TimelineItem
+              key={ `${ item.title }@${ item.organization }` }
+              { ...item }
+            />
+          )) }
         </tbody>
       </table>
     </section>
