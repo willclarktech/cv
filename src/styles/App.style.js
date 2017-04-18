@@ -1,8 +1,10 @@
-import {
+import variables from './_variables.style.js'
+
+const {
   mainFont,
   baseFontSize,
   mainTextColor,
-} from './_variables.style.js'
+} = variables
 
 export default {
   fontFamily: mainFont,
