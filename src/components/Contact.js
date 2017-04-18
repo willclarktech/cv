@@ -16,7 +16,7 @@ const contactDetailHrefPrefixes = {
   email: 'mailto:',
   phone: 'tel:',
   address: 'https://www.google.com/maps/place/',
-  website: 'https://',
+  website: 'http://',
   twitter: 'https://twitter.com/',
   linkedIn: 'https://linkedin.com/in/',
   gitHub: 'https://github.com/',
