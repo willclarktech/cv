@@ -25,7 +25,7 @@ const contactDetailHrefPrefixes = {
 const getHref = (name, text) => {
   const prefix = contactDetailHrefPrefixes[name]
   const suffix = name === 'address'
-    ? text.replace(/ /g, '+')
+    ? text.replace(/\s/g, '+')
     : text
   return `${ prefix }${ suffix }`
 }
