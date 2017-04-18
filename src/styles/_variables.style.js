@@ -19,7 +19,4 @@ export default {
 
   defaultFontWeight: 300,
   // historyDetailFontSize: '0.8em',
-
-  iconWidth: '5.5mm',
-  iconPad: '1mm',
 }
