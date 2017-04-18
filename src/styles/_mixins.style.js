@@ -30,6 +30,7 @@ export const h1 = {
   ...mainHeading,
   fontSize: h1FontSize,
   fontWeight: defaultFontWeight * 2,
+  marginBottom: '0.5em',
 }
 
 export const h2 = {

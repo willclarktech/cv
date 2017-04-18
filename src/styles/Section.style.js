@@ -78,5 +78,5 @@ export const timelineItemOrganisationStyle = {
 }
 
 export default {
-  marginTop: '-1mm', // HACK
+  marginTop: '-1.8mm', // HACK
 }

@@ -6,6 +6,7 @@ export const introHeadingStyle = {
 
 export const introSummaryStyle = {
   fontSize: '1.4em',
+  marginBottom: '4mm',
 }
 
 export default {
