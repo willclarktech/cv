@@ -60,7 +60,9 @@ export default ({
         <span style={ ruleRightStyle } />
       </h2>
       <table style={ timelineStyle }>
-        { timeline.map(TimelineItem) }
+        <tbody>
+          { timeline.map(TimelineItem) }
+        </tbody>
       </table>
     </section>
   )
