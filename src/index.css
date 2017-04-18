@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
 html {
@@ -24,4 +25,21 @@ body {
 p,
 td {
   text-align: justify;
+  padding: 0;
+  margin: 0;
+}
+
+/* Markdown */
+
+code {
+  padding: 1mm;
+  border-radius: 1mm;
+  font-family: "Ubuntu Mono";
+  color: #00b0e6;
+  background-color: #eee;
+}
+
+a {
+  text-decoration: none;
+  color: #131b30;
 }
