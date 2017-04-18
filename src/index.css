@@ -14,7 +14,7 @@ body {
   font-family: sans-serif;
 }
 
-body.a4-page {
+.a4-page {
   height: 297mm;
   width: 210mm;
 }
