@@ -12,10 +12,6 @@ const {
 const timelineItemFontSize = '0.8em'
 const ruleGapPercentage = 4
 
-export const notFirstSectionStyle = {
-  marginTop: '10mm',
-}
-
 export const sectionHeadingStyle = {
   ...h2,
 }
@@ -59,6 +55,10 @@ export const timelineHeaderCellStyle = {
   paddingRight: `${ ruleGapPercentage }%`,
   width: `${ leftColumnWidthPercentage * 100 }%`,
   textAlign: 'right',
+}
+
+export const timelineCellQuickStyle = {
+  paddingBottom: '1mm',
 }
 
 export const timelineItemTitleStyle = {

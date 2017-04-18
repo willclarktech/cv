@@ -1,6 +1,5 @@
 import React from 'react'
 import style, {
-  notFirstSectionStyle,
   sectionHeadingStyle,
   subHeadingStyle,
   ruleLeftStyle,
@@ -8,6 +7,7 @@ import style, {
   timelineStyle,
   timelineHeaderCellStyle,
   timelineCellStyle,
+  timelineCellQuickStyle,
   timelineItemTitleStyle,
   timelineItemOrganisationStyle,
   timelineItemDatesStyle,
@@ -28,22 +28,32 @@ const TimelineItem = ({
   organization,
   dates,
   description,
-}) => (
-  <tr>
-    <th style={ timelineHeaderCellStyle }>
-      <div style={ timelineItemTitleStyle }>{ title }</div>
-      <div style={ timelineItemOrganisationStyle }>{ organization }</div>
-      { dates && (
-        <div style={ timelineItemDatesStyle }>
-          { dates.map(formatDate).join(' — ') }
-        </div>
-      ) }
-    </th>
-    <td style={ timelineCellStyle }>
-      { description }
-    </td>
-  </tr>
-)
+  quick,
+}) => {
+  const thStyle = quick
+    ? { ...timelineHeaderCellStyle, ...timelineCellQuickStyle }
+    : timelineHeaderCellStyle
+  const tdStyle = quick
+    ? { ...timelineCellStyle, ...timelineCellQuickStyle }
+    : timelineCellStyle
+
+  return (
+    <tr>
+      <th style={ thStyle }>
+        <div style={ timelineItemTitleStyle }>{ title }</div>
+        <div style={ timelineItemOrganisationStyle }>{ organization }</div>
+        { dates && (
+          <div style={ timelineItemDatesStyle }>
+            { dates.map(formatDate).join(' — ') }
+          </div>
+        ) }
+      </th>
+      <td style={ tdStyle }>
+        { description }
+      </td>
+    </tr>
+  )
+}
 
 export default ({
   title,
@@ -52,12 +62,9 @@ export default ({
   isFirstSection,
 }) => {
   const id = title.split(' ').join('-')
-  const s = isFirstSection
-    ? style
-    : { ...style, ...notFirstSectionStyle }
 
   return (
-    <section id={ id } style={ s }>
+    <section id={ id } style={ style }>
       <span style={ ruleLeftStyle } />
       <h2 style={ sectionHeadingStyle }>
         { title }
@@ -69,6 +76,7 @@ export default ({
           { timeline.map(item => (
             <TimelineItem
               key={ `${ item.title }@${ item.organization }` }
+              quick={ title === 'Skills' }
               { ...item }
             />
           )) }
