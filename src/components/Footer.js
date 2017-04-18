@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import style from '../styles/Footer.style'
 import Link from './Link'
 

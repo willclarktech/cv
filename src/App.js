@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import style from './styles/App.style'
 import RobotsTxt from './components/RobotsTxt'
 import Intro from './components/Intro'

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import style, { introHeadingStyle, introSummaryStyle } from '../styles/Intro.style'
 
 export default ({ name, summary }) => (
