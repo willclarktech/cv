@@ -4,6 +4,7 @@ import { h2 } from './_mixins.style'
 const {
   mainTextColor,
   lightTextColor,
+  baseFontSize,
   defaultFontWeight,
   leftColumnWidthPercentage,
 } = variables
@@ -17,6 +18,14 @@ export const notFirstSectionStyle = {
 
 export const sectionHeadingStyle = {
   ...h2,
+}
+
+export const subHeadingStyle = {
+  color: lightTextColor,
+  fontSize: baseFontSize,
+  textTransform: 'initial',
+  paddingLeft: `${ ruleGapPercentage / 2 }%`,
+  paddingTop: '0.5mm', // HACK
 }
 
 const ruleStyle = {
@@ -47,9 +56,9 @@ export const timelineCellStyle = {
 
 export const timelineHeaderCellStyle = {
   ...timelineCellStyle,
-  paddingRight: '5mm',
+  paddingRight: `${ ruleGapPercentage }%`,
   width: `${ leftColumnWidthPercentage * 100 }%`,
-  textAlign: 'left',
+  textAlign: 'right',
 }
 
 export const timelineItemTitleStyle = {

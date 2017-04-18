@@ -2,6 +2,7 @@ import React from 'react'
 import style, {
   notFirstSectionStyle,
   sectionHeadingStyle,
+  subHeadingStyle,
   ruleLeftStyle,
   ruleRightStyle,
   timelineStyle,
@@ -32,9 +33,11 @@ const TimelineItem = ({
     <th style={ timelineHeaderCellStyle }>
       <div style={ timelineItemTitleStyle }>{ title }</div>
       <div style={ timelineItemOrganisationStyle }>{ organization }</div>
-      <div style={ timelineItemDatesStyle }>
-        { dates.map(formatDate).join(' — ') }
-      </div>
+      { dates && (
+        <div style={ timelineItemDatesStyle }>
+          { dates.map(formatDate).join(' — ') }
+        </div>
+      ) }
     </th>
     <td style={ timelineCellStyle }>
       { description }
@@ -44,6 +47,7 @@ const TimelineItem = ({
 
 export default ({
   title,
+  subtitle,
   timeline,
   isFirstSection,
 }) => {
@@ -57,6 +61,7 @@ export default ({
       <span style={ ruleLeftStyle } />
       <h2 style={ sectionHeadingStyle }>
         { title }
+        { subtitle && (<span style={ subHeadingStyle }>{ subtitle }</span>) }
         <span style={ ruleRightStyle } />
       </h2>
       <table style={ timelineStyle }>
