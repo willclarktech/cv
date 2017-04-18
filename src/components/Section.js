@@ -4,6 +4,12 @@ import style, {
   sectionHeadingStyle,
   ruleLeftStyle,
   ruleRightStyle,
+  timelineStyle,
+  timelineHeaderCellStyle,
+  timelineCellStyle,
+  timelineItemTitleStyle,
+  timelineItemOrganisationStyle,
+  timelineItemDatesStyle,
 } from '../styles/Section.style'
 
 const monthNames = [
@@ -23,14 +29,14 @@ const TimelineItem = ({
   description,
 }) => (
   <tr>
-    <th>
-      <div className="timeline-item-title">{ title }</div>
-      <div className="timeline-item-organisation">{ organization }</div>
-      <div className="timeline-item-dates">
+    <th style={ timelineHeaderCellStyle }>
+      <div style={ timelineItemTitleStyle }>{ title }</div>
+      <div style={ timelineItemOrganisationStyle }>{ organization }</div>
+      <div style={ timelineItemDatesStyle }>
         { dates.map(formatDate).join(' — ') }
       </div>
     </th>
-    <td>
+    <td style={ timelineCellStyle }>
       { description }
     </td>
   </tr>
@@ -53,7 +59,7 @@ export default ({
         { title }
         <span style={ ruleRightStyle } />
       </h2>
-      <table className="timeline">
+      <table style={ timelineStyle }>
         { timeline.map(TimelineItem) }
       </table>
     </section>

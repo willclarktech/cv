@@ -14,9 +14,8 @@ export default {
   smallFontSize: '0.8em',
 
   mainTextColor: '#131b30',
-  // lightTextColor: '#888',
+  lightTextColor: '#888',
   highlightColor: '#00b0e6',
 
   defaultFontWeight: 300,
-  // historyDetailFontSize: '0.8em',
 }
