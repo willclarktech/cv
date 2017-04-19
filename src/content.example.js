@@ -1,4 +1,4 @@
-// Copy this to content.js and complete with your own information.
+// Copy this to src/content.js and complete with your own information.
 
 const blah = n => Array(n).fill('blah').join(' ')
 
