@@ -5,6 +5,10 @@ const {
   REACT_APP_EMAIL: EMAIL,
   REACT_APP_PHONE: PHONE,
   REACT_APP_ADDRESS: ADDRESS,
+  REACT_APP_WEBSITE: WEBSITE,
+  REACT_APP_TWITTER: TWITTER,
+  REACT_APP_LINKEDIN: LINKEDIN,
+  REACT_APP_GITHUB: GITHUB,
 } = process.env
 
 const intro = {
@@ -16,10 +20,10 @@ const contact = {
   email: obfuscateEmail(EMAIL),
   phone: redact(PHONE),
   address: redact(ADDRESS),
-  website: 'willclark.tech',
-  twitter: '@willclarktech',
-  linkedIn: 'willclarktech',
-  gitHub: 'willclarktech',
+  website: WEBSITE,
+  twitter: TWITTER,
+  linkedIn: LINKEDIN,
+  gitHub: GITHUB,
 }
 
 const sections = [
