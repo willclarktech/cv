@@ -15,6 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:private": "REACT_APP_STRIP_PRIVATE_DATA=true react-scripts start",
+    "start:example": "REACT_APP_USE_EXAMPLE_CONTENT=true react-scripts start",
     "build": "react-scripts build",
     "build:private": "REACT_APP_STRIP_PRIVATE_DATA=true react-scripts build",
     "build:example": "REACT_APP_USE_EXAMPLE_CONTENT=true react-scripts build",
