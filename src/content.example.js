@@ -1,18 +1,11 @@
 // Copy this to src/content.js and complete with your own information.
+import { blah, obfuscateEmail, redact } from './helpers'
+
 const {
-  REACT_APP_STRIP_PRIVATE_DATA: STRIP_PRIVATE_DATA,
   REACT_APP_EMAIL: EMAIL,
   REACT_APP_PHONE: PHONE,
   REACT_APP_ADDRESS: ADDRESS,
 } = process.env
-
-// This function can be removed when placeholders are no longer required
-const blah = n => Array(n).fill('blah').join(' ')
-
-const redact = info => STRIP_PRIVATE_DATA
-  ? '[redacted]'
-  : info
-
 
 const intro = {
   name: 'Will Clark',
@@ -20,7 +13,7 @@ const intro = {
 }
 
 const contact = {
-  email: redact(EMAIL),
+  email: obfuscateEmail(EMAIL),
   phone: redact(PHONE),
   address: redact(ADDRESS),
   website: 'willclark.tech',
