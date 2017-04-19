@@ -1,7 +1,8 @@
 {
   "name": "cv",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "http://willclarktech.github.io/cv",
+  "author": "willclarktech",
   "private": true,
   "dependencies": {
     "react": "^15.5.4",
