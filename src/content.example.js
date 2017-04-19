@@ -1,7 +1,13 @@
 // Copy this to src/content.js and complete with your own information.
+const { REACT_APP_STRIP_PRIVATE_DATA: STRIP_PRIVATE_DATA } = process.env
 
 // This function can be removed when placeholders are no longer required
 const blah = n => Array(n).fill('blah').join(' ')
+
+const redact = info => STRIP_PRIVATE_DATA
+  ? '[redacted]'
+  : info
+
 
 const intro = {
   name: 'Will Clark',
@@ -9,9 +15,9 @@ const intro = {
 }
 
 const contact = {
-  email: 'testy@email.com',
-  phone: '+00 (0)123 4567 9010',
-  // address: '123 Test Street, 12345 Testington',
+  email: redact('testy@email.com'),
+  phone: redact('+00 (0)123 4567 9010'),
+  address: redact('123 Test Street, 12345 Testington'),
   website: 'willclark.tech',
   twitter: '@willclarktech',
   linkedIn: 'willclarktech',
