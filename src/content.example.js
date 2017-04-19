@@ -1,5 +1,10 @@
 // Copy this to src/content.js and complete with your own information.
-const { REACT_APP_STRIP_PRIVATE_DATA: STRIP_PRIVATE_DATA } = process.env
+const {
+  REACT_APP_STRIP_PRIVATE_DATA: STRIP_PRIVATE_DATA,
+  REACT_APP_EMAIL: EMAIL,
+  REACT_APP_PHONE: PHONE,
+  REACT_APP_ADDRESS: ADDRESS,
+} = process.env
 
 // This function can be removed when placeholders are no longer required
 const blah = n => Array(n).fill('blah').join(' ')
@@ -15,9 +20,9 @@ const intro = {
 }
 
 const contact = {
-  email: redact('testy@email.com'),
-  phone: redact('+00 (0)123 4567 9010'),
-  address: redact('123 Test Street, 12345 Testington'),
+  email: redact(EMAIL),
+  phone: redact(PHONE),
+  address: redact(ADDRESS),
   website: 'willclark.tech',
   twitter: '@willclarktech',
   linkedIn: 'willclarktech',
