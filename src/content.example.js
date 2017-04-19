@@ -1,5 +1,6 @@
 // Copy this to src/content.js and complete with your own information.
 
+// This function can be removed when placeholders are no longer required
 const blah = n => Array(n).fill('blah').join(' ')
 
 const intro = {
