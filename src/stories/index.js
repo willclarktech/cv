@@ -1,5 +1,5 @@
 import React from 'react'
-import { storiesOf, action, linkTo } from '@kadira/storybook'
+import { storiesOf /*, action, linkTo */ } from '@kadira/storybook'
 import Intro from '../components/Intro'
 import Contact from '../components/Contact'
 import Section from '../components/Section'
