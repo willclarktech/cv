@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import style from './styles/App.style'
-import RobotsTxt from './components/RobotsTxt'
-import Intro from './components/Intro'
-import Contact from './components/Contact'
-import Section from './components/Section'
-import Footer from './components/Footer'
+import style from '../styles/App.style'
+import RobotsTxt from './RobotsTxt'
+import Intro from './Intro'
+import Contact from './Contact'
+import Section from './Section'
+import Footer from './Footer'
 
 class App extends Component {
   render() {
