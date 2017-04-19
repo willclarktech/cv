@@ -10,7 +10,7 @@ import Icon from './Icon'
 const contactDetailIcons = {
   email: 'envelope',
   phone: 'mobile',
-  // address: 'map-pin',
+  address: 'map-pin',
   website: 'chrome',
   twitter: 'twitter',
   linkedIn: 'linkedin',

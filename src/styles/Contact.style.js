@@ -5,6 +5,7 @@ const { smallFontSize } = variables
 
 export const contactListStyle = {
   padding: 0,
+  margin: 0,
  }
 
 export const contactDetailStyle = {
