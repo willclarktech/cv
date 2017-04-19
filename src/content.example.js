@@ -100,7 +100,7 @@ const footer = {
   link: 'github.com/willclarktech/cv',
 }
 
-module.exports = {
+export default {
   intro,
   contact,
   sections,
