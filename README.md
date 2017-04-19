@@ -4,6 +4,8 @@ This is my CV, written in React. Yes it’s kind of overkill to use React for a 
 
 See [here](http://willclark.tech/cv/) for an online version.
 
+This project was created using [create-react-app](https://github.com/facebookincubator/create-react-app).
+
 ## Installation
 
 ```sh
