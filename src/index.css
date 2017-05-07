@@ -43,3 +43,11 @@ a {
   text-decoration: none;
   color: #00b0e6;
 }
+
+@media only screen {
+  body {
+    margin-top: 12mm;
+    margin-bottom: 12mm;
+    padding: 12mm;
+  }
+}
