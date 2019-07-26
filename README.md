@@ -11,6 +11,7 @@ This project was created using [create-react-app](https://github.com/facebookinc
 ```sh
 git clone https://github.com/willclarktech/cv.git
 cd cv
+yarn
 ```
 
 ## Running the development application with example data
@@ -18,6 +19,7 @@ cd cv
 ```sh
 yarn start:example # or npm run start:example
 ```
+
 Visit `localhost:3000`.
 
 ## Configuration
@@ -43,6 +45,7 @@ yarn start # or npm run start
 Update `homepage` in `package.json` if you want to deploy to GitHub Pages.
 
 Deploy with sensitive data redacted/obfuscated:
+
 ```sh
 yarn deploy # or npm run deploy
 ```
