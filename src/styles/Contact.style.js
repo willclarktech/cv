@@ -14,7 +14,7 @@ export const contactDetailStyle = {
 };
 
 export const contactDetailNewGroupStyle = {
-	paddingTop: "3.6mm",
+	paddingTop: "1.9mm",
 };
 
 export default {
