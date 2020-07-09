@@ -1,13 +1,11 @@
-import variables from './_variables.style'
+import variables from "./_variables.style";
 
-const {
-  highlightColor,
-} = variables
+const { highlightColor } = variables;
 
 export default {
-  color: highlightColor,
-  display: 'inline-block',
-  paddingRight: '1mm',
-  width: '5.5mm',
-  textAlign: 'center',
-}
+	color: highlightColor,
+	display: "inline-block",
+	paddingRight: "1mm",
+	width: "5.5mm",
+	textAlign: "center",
+};
