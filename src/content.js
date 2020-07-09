@@ -30,80 +30,69 @@ const contact = {
 
 const sections = [
 	{
-		title: "Development Experience",
+		title: "Experience",
 		timeline: [
 			{
-				title: "Self-directed study",
-				dates: [new Date("2011-03-01"), "present"],
+				title: "Senior software developer",
+				organization: "CosmWasm - cosmwasm.com",
+				dates: [new Date("2020-06-07"), "present"],
 				description:
-					"Built my first website in 2011 and started taking it more seriously in Jan 2015. From Aug 2015 embarked upon a period of intensive self-directed study, focusing on Python, Django and front end development, culminating in my job at Pixsy. Currently taking some time out to focus on learning projects.",
+					"Building official TypeScript client library for the Cosmos blockchain project, including new protocol buffer encoding: [github.com/CosmWasm/cosmjs](https://github.com/CosmWasm/cosmjs).",
+			},
+			{
+				title: "Volunteer contributor",
+				organization: "OpenMined - openmined.org",
+				dates: [new Date("2020-04-01"), "present"],
+				description:
+					"Providing TypeScript support for JS wrappers of private set intersection library (with potential contact-tracing applications): [github.com/OpenMined/PSI](https://github.com/OpenMined/PSI). Also contributing blog posts on the technologies involved.",
+			},
+			{
+				title: "Blockchain library developer",
+				organization: "IOV SAS - iov.one",
+				dates: [new Date("2019-02-22"), new Date("2020-01-15")],
+				description:
+					"Worked primarily on the TypeScript library which provides abstractions over different types of blockchains. Also developed Solidity smart contracts to support IOV’s atomic swap protocol on Ethereum, including security analysis.",
+			},
+			{
+				title: "Cohort member",
+				organization: "Entrepreneur First - joinef.com",
+				dates: [new Date("2018-10-01"), new Date("2019-01-31")],
+				description:
+					"Pre-team, pre-idea startup accelerator focused on introducing potential high-impact founders and supporting them in creating companies.",
+			},
+			{
+				title: "Blockchain developer",
+				organization: "Lightcurve GmbH - lisk.io",
+				dates: [new Date("2017-07-01"), new Date("2018-09-30")],
+				description:
+					"Led development of Lisk’s CLI tool, then the general-purpose library. Also helped with development of the “core” (node) software, in particular testing, standards and protocol design, including security aspects.",
 			},
 			{
 				title: "Full-stack developer",
-				organization: "Pixsy GmbH",
+				organization: "Pixsy GmbH - pixsy.com",
 				dates: [new Date("2016-01-04"), new Date("2017-03-31")],
 				description:
-					"Universal JavaScript stack: I worked on all parts of the app including React/Redux front end, Koa2 back end (previously Express), testing, bug-fixing, dev-ops tasks involving AWS and CircleCI etc.",
+					"Universal JS stack: React/Redux front end, Node.js/MongoDB back end, testing, bug-fixing, AWS management, CI integration, database migrations etc.",
 			},
 		],
 	},
 	{
 		title: "Skills",
-		subtitle: "with brief indication of level",
 		timeline: [
 			{
-				title: "JavaScript",
+				title: "JS/TypeScript/Node.js",
 				description:
-					"ES7+. Comfortable with `fn.bind`/`fn.call`/`fn.apply` and partial application.",
+					"Primary languages/environment I have used professionally since Jan 2016. Experience with modern front end development, but my focus more recently has been on back end/isomorphic library work.",
 			},
 			{
-				title: "Functional programming",
+				title: "Machine learning & AI",
 				description:
-					"[Side projects](https://github.com/willclarktech/elm-boilerplate) using Elm. Prefer `const` and avoid mutations/side-effects in JS except where necessary for performance. Comfortable with `arr.reduce`.",
+					"Current focus in side projects. Originally learned to code in Python. See eg [github.com/willclarktech/ts-ml-framework](https://github.com/willclarktech/ts-ml-framework), [github.com/willclarktech/policy-gradient-implementations](https://github.com/willclarktech/policy-gradient-implementations), [github.com/willclarktech/ts-rl](https://github.com/willclarktech/ts-rl). Especially interested in full-stack security of ML/AI applications.",
 			},
 			{
-				title: "React",
+				title: "Cryptography & Security",
 				description:
-					"Separation of smart vs dumb components. Prefer stateless functional.",
-			},
-			{
-				title: "Redux",
-				description:
-					"My project [apollo-redux-server](https://github.com/willclarktech/apollo-redux-server) initializes a redux store on the server from a dynamically-updated list of actions from an event store.",
-			},
-			{
-				title: "MongoDB",
-				description: "Comfortable writing aggregation pipelines.",
-			},
-			{
-				title: "End-to-end testing",
-				description:
-					"Experience with Gherkin, Selenium, Nightmare.js, Browserstack. Designed and built E2E testing setup from scratch at Pixsy. Comfortable with page object model.",
-			},
-			{
-				title: "Git",
-				description:
-					"Comfortable with `rebase`, `bisect`, `cherry-pick`, `push --force-with-lease`.",
-			},
-			{
-				title: "AWS",
-				description:
-					"Migrated data from one EC2 instance to another via a volume snapshot. Set up EC2 containers from scratch in a new region.",
-			},
-			{
-				title: "NPM",
-				description:
-					"Published semver-compliant package: [steggy](https://www.npmjs.com/package/steggy). Familiar with yarn.",
-			},
-			{
-				title: "ELK stack",
-				description:
-					"Set up and configured Filebeat, Logstash, Elasticsearch, and Kibana using a docker image. Experience deleting indices and deleting by query.",
-			},
-			{
-				title: "Cryptography etc",
-				description:
-					"Learning the basics by implementing them in my project [crypto-primitives](https://github.com/willclarktech/crypto-primitives). Wrote an NPM package for steganography. Interest in Bitcoin and Blockchain.",
+					"Comfortable with many concepts through blockchain experience. Learning by implementing cryptography primitives from scratch, eg Dan Boneh’s Coursera course and [cryptopals.com](https://cryptopals.com) exercises: [github.com/willclarktech/crypto-primitives](https://github.com/willclarktech/crypto-primitives). Hobbyist web application hacker. Wrote npm package for steganography: [npmjs.com/package/steggy](https://www.npmjs.com/package/steggy).",
 			},
 		],
 	},
@@ -111,18 +100,11 @@ const sections = [
 		title: "Education",
 		timeline: [
 			{
-				title: "Lean Launch Program",
-				organization: "Saïd Business School, Oxford",
-				dates: [new Date("2014-05-01")],
-				description:
-					"Course designed to develop entrepreneurial skills within the Lean Startup framework by applying concepts to a real-life business idea. Extended contact with a mentor and other successful entrepreneurs.",
-			},
-			{
-				title: "BPhil Philosophy",
+				title: "BPhil Philosophy (master’s)",
 				organization: "Hertford College, Oxford",
 				dates: [new Date("2011-10-01"), new Date("2013-06-30")],
 				description:
-					"Distinction awarded (overall and for each assessed component). Full AHRC funding: tuition fees and living expenses for two years. Hertford College prize.",
+					"Distinction awarded (overall and for each assessed component), Hertford College prize. Full AHRC funding: fees and living expenses for two years.",
 			},
 			{
 				title: "BA Philosophy & Psychology",
