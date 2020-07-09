@@ -1,32 +1,33 @@
 {
-  "name": "cv",
-  "version": "1.0.0",
-  "homepage": "http://willclarktech.github.io/cv",
-  "author": "willclarktech",
-  "private": true,
-  "dependencies": {
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-markdown": "^2.5.0"
-  },
-  "devDependencies": {
-    "@kadira/storybook": "^2.21.0",
-    "gh-pages": "^0.12.0",
-    "prettier": "^2.0.5",
-    "react-scripts": "0.9.5"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "start:private": "REACT_APP_STRIP_PRIVATE_DATA=true react-scripts start",
-    "start:example": "REACT_APP_USE_EXAMPLE_CONTENT=true react-scripts start",
-    "build": "react-scripts build",
-    "build:private": "REACT_APP_STRIP_PRIVATE_DATA=true react-scripts build",
-    "build:example": "REACT_APP_USE_EXAMPLE_CONTENT=true react-scripts build",
-    "predeploy": "yarn build:private",
-    "deploy": "gh-pages -d build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
-  }
+	"name": "cv",
+	"version": "1.0.0",
+	"homepage": "http://willclarktech.github.io/cv",
+	"author": "willclarktech",
+	"private": true,
+	"dependencies": {
+		"react": "^15.5.4",
+		"react-dom": "^15.5.4",
+		"react-markdown": "^2.5.0"
+	},
+	"devDependencies": {
+		"@kadira/storybook": "^2.21.0",
+		"gh-pages": "^0.12.0",
+		"prettier": "^2.0.5",
+		"react-scripts": "0.9.5"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"start:private": "REACT_APP_STRIP_PRIVATE_DATA=true react-scripts start",
+		"start:example": "REACT_APP_USE_EXAMPLE_CONTENT=true react-scripts start",
+		"build": "react-scripts build",
+		"build:private": "REACT_APP_STRIP_PRIVATE_DATA=true react-scripts build",
+		"build:example": "REACT_APP_USE_EXAMPLE_CONTENT=true react-scripts build",
+		"predeploy": "yarn build:private",
+		"deploy": "gh-pages -d build",
+		"test": "react-scripts test --env=jsdom",
+		"format": "prettier --write src/{,**/}*.{css,js} public/*.html .storybook/*.js *.md",
+		"eject": "react-scripts eject",
+		"storybook": "start-storybook -p 9009 -s public",
+		"build-storybook": "build-storybook -s public"
+	}
 }
