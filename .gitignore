@@ -11,6 +11,7 @@
 
 # config (potentially sensitive)
 .env
+.env.redacted
 
 # output
 *.pdf
