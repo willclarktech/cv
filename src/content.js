@@ -87,7 +87,7 @@ const sections = [
 			{
 				title: "Machine learning & AI",
 				description:
-					"Current focus in side projects. Originally learned to code in Python. See eg [github.com/willclarktech/ts-ml-framework](https://github.com/willclarktech/ts-ml-framework), [github.com/willclarktech/policy-gradient-implementations](https://github.com/willclarktech/policy-gradient-implementations), [github.com/willclarktech/ts-rl](https://github.com/willclarktech/ts-rl). Especially interested in full-stack security of ML/AI applications.",
+					"Current focus in side projects. Originally learned to code in Python. See eg [github.com/willclarktech/ts-ml-framework](https://github.com/willclarktech/ts-ml-framework), [github.com/willclarktech/ts-rl](https://github.com/willclarktech/ts-rl), [github.com/willclarktech/policy-gradient-implementations](https://github.com/willclarktech/policy-gradient-implementations). Especially interested in full-stack security of ML/AI applications.",
 			},
 			{
 				title: "Cryptography & Security",
