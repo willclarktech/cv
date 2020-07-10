@@ -21,7 +21,6 @@ export const subHeadingStyle = {
 	fontSize: baseFontSize,
 	textTransform: "initial",
 	paddingLeft: `${ruleGapPercentage / 2}%`,
-	paddingTop: "0.5mm", // HACK
 };
 
 const ruleStyle = {
